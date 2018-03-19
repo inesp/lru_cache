@@ -126,7 +126,9 @@ disable=print-statement,
         next-method-defined,
         dict-items-not-iterating,
         dict-keys-not-iterating,
-        dict-values-not-iterating
+        dict-values-not-iterating,
+        missing-docstring,
+        too-few-public-methods
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
@@ -287,7 +289,7 @@ name-group=
 
 # Regular expression which should only match function or class names that do
 # not require a docstring.
-no-docstring-rgx=^_
+no-docstring-rgx=.
 
 # List of decorators that produce properties, such as abc.abstractproperty. Add
 # to this list to register other decorators that produce valid properties.
@@ -330,11 +332,11 @@ expected-line-ending-format=
 ignore-long-lines=^\s*(# )?<?https?://\S+>?$
 
 # Number of spaces of indent required inside a hanging  or continued line.
-indent-after-paren=4
+indent-after-paren=2
 
 # String used as indentation unit. This is usually "    " (4 spaces) or "\t" (1
 # tab).
-indent-string='    '
+indent-string='  '
 
 # Maximum number of characters on a single line.
 max-line-length=100
